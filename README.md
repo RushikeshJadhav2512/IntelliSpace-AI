@@ -81,3 +81,4 @@ CUDA_VISIBLE_DEVICES=0 accelerate launch --mixed_precision="bf16" train_controln
 ```
 CUDA_VISIBLE_DEVICES=0 accelerate launch --mixed_precision="bf16" train_text_to_image_lora.py  --checkpointing_steps=20000 --pretrained_model_name_or_path="runwayml/stable-diffusion-v1-5"  --output_dir=model_lora --resolution=512  --learning_rate=1e-4 --validation_prompt "A Bauhaus-inspired living room with a sleek black leather sofa, a tubular steel coffee table exemplifying modernist design, and a geometric patterned rug adding a touch of artistic flair."  --train_batch_size=4 --dataset_name=fill50k.py --random_flip --gradient_accumulation_steps=1 --mixed_precision="bf16" --num_train_epochs=10 --rank=64 --report_to wandb
 ```
+# IntelliSpace-AI
